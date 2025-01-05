@@ -1,3 +1,20 @@
+"""
+Testing loss: ~2.14
+
+Example output:
+
+mariyah
+jailia
+krishaira
+jana
+salas
+elaiyanialace
+jemmalis
+emrey
+karlous
+elisha
+"""
+
 import torch
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
@@ -77,22 +94,3 @@ for _ in range(10):
             out.append(itos[idx])
 
     print(''.join(out))
-
-
-
-"""
-Testing loss: ~2.14
-
-Example output:
-
-mariyah
-jailia
-krishaira
-jana
-salas
-elaiyanialace
-jemmalis
-emrey
-karlous
-elisha
-"""
