@@ -1,3 +1,20 @@
+"""
+Testing loss: ~3.18
+
+Example output:
+
+edestlelengiyasholi
+der
+bitan
+jela
+r
+xynte
+je
+bqfrioghuiela
+tarimpananaum
+lileyn
+"""
+
 import torch
 import torch.nn.functional as F
 
@@ -60,18 +77,3 @@ for _ in range(10):
         else:
             out.append(chr(idx - 1 + 97))
     print(''.join(out))
-
-
-"""
-Example output:
-edestlelengiyasholi
-der
-bitan
-jela
-r
-xynte
-je
-bqfrioghuiela
-tarimpananaum
-lileyn
-"""
