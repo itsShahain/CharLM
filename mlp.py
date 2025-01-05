@@ -26,13 +26,18 @@ for w in words:
 
 X = torch.tensor(X)
 Y = torch.tensor(Y)
-
 g = torch.Generator().manual_seed(2147483647)
-C = torch.randn((27, 50), generator=g, requires_grad=True)
-W1 = torch.randn((150, 300), generator=g, requires_grad=True)
-b1 = torch.randn((300,), generator=g, requires_grad=True)
-W2 = torch.randn((300, 27), generator=g, requires_grad=True)
-b2 = torch.randn((27,), generator=g, requires_grad=True)
+
+C = torch.randn((27, 10), generator=g)
+W1 = torch.randn((30, 200), generator=g) * 1/(150**0.5) # added Kaiming He initialization
+b1 = torch.randn((200,), generator=g) * 0.01
+W2 = torch.randn((200, 27), generator=g) * (5/3)/(150**0.5)
+b2 = torch.randn((27,), generator=g) * 0
+
+parameters = [C, W1, b1, W2, b2]
+
+for p in parameters:
+    p.requires_grad = True
 
 parameters = [C, W1, b1, W2, b2]
 
@@ -76,16 +81,18 @@ for _ in range(10):
 
 
 """
+Testing loss: ~2.14
+
 Example output:
 
-lrao
-dra
-zelzynahyt
-usieo
-lshy
-leo
-inshgdellyajtin
-isliganeplaj
-eeniezidns
-llebfah
+mariyah
+jailia
+krishaira
+jana
+salas
+elaiyanialace
+jemmalis
+emrey
+karlous
+elisha
 """
