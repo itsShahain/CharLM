@@ -13,7 +13,7 @@ The training pipeline of our model is as follows:
 
 ## a) Class-Agnostic Detection Transformer Training
 
-First we train the class-agnostic Detection Transformer on CAPTCHA images with bounding boxes drawn manually by us. After manual labelling and data augmentations, we had about ~1,000 bounding-box drawn images. To train, please run (on the Tembusu cluster):
+First we train the class-agnostic Detection Transformer on CAPTCHA images with bounding boxes drawn manually by us on Roboflow. After manual labelling and data augmentations, we had about ~1,000 bounding-box drawn images. To train, please run (on the Tembusu cluster):
 
 ```bash
 srun --gpus=a100-40:1 python main.py --dataset_file letter --data_path ../dataset/ --output_dir output --resume weights/detr-r50-e632da11.pth
