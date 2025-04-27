@@ -51,11 +51,6 @@ srun --gpus=a100-40 python extract.py --data_path ../dataset/cleaned_images --re
 
 Then the individual CNN's that comprise the simulated Baye's optimal ensemble are trained on these segmented individual letters.
 
-```bash
-# Example training command for CNN experts
-python train_cnn.py --data_dir today/ --output_dir cnn_weights/
-```
-
 ## d) Compute each CNN Expert's Prior Weights
 
 We create prior weights for each expert using the validation accuracy on the custom ~17,000 letter dataset. We give each expert a weight of:
