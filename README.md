@@ -7,7 +7,7 @@ RNNs, LSTM + GRU
 Note: this repo is still under development
 
 
-# Training Pipeline of Our Model
+# Training Pipeline for our Class-Agnostic Detection Transformer + Simulated Bayes Optimal Ensemble model
 
 The training pipeline of our model is as follows:
 
