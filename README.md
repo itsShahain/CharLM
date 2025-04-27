@@ -11,7 +11,7 @@ Note: this repo is still under development
 
 The training pipeline of our model is as follows:
 
-## a) Detection Transformer Training
+## a) Class-Agnostic Detection Transformer Training
 
 First we train the class-agnostic Detection Transformer on CAPTCHA images with bounding boxes drawn manually by us. After manual labelling and data augmentations, we had about ~1,000 bounding-box drawn images. To train, please run (on the Tembusu cluster):
 
