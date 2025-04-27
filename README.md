@@ -77,12 +77,12 @@ The metrics achieved are (you can check the slurm files `slurm-597563-PIPELINE_P
 ```
 Successfully processed images: 2000
 Avg. Time per processed image: 0.017s
-Correctly predicted : 9547
+Correctly predicted characters : 9547
 Total number of characters : 11733
-0.8136878888604789
+0.8136878888604789 (Character accuracy)
 Total number of captchas : 2000
-Correctly predicted : 881
-0.4405
+Correctly predicted captchas : 881
+0.4405 (captcha accuracy, mathematically this is expected given character level accuracy)
 Precision: 0.8137
 Recall:    0.7949
 F1 Score:  0.8042
